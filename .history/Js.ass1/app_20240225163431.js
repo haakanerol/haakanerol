@@ -44,4 +44,4 @@ myProjects.forEach(project=>{
     newLi = document.createElement("li")
     newLi.textContent = project
     newProjects.appendChild(newLi)
-})
+}

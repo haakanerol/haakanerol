@@ -37,11 +37,4 @@ newBtn.style.cursor = "pointer"
 newBtn.textContent = " Giris Yap"
 
 newProjects = document.getElementById("projects")
-newProjects.firstElementChild.textContent = "Js Dom Projects"
-
-const myProjects = ["Hello World!","Guess Number","Checkout Page","Gelir-Gider Projesi","Api Projects"]
-myProjects.forEach(project=>{
-    newLi = document.createElement("li")
-    newLi.textContent = project
-    newProjects.appendChild(newLi)
-})
+newProjects.firstChildElement

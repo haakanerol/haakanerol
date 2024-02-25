@@ -1,0 +1,1 @@
+newHeader = document.querySelector
