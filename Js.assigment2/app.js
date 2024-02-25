@@ -24,7 +24,7 @@ newBtnClick.addEventListener('keydown', (e) => {
 window.onload = ()=> bgColor();
 // window.addEventListener('load', bgColor());
 
-newColorInput.onchange = ()=>{
+newColorInput.addEventListener("input",()=>{
     let newColor = newColorInput.value
     newBg.style.backgroundColor = newColor
-}
+})
