@@ -16,9 +16,15 @@ newBtnClick.addEventListener("click",bgColor)
 newBtnClick.addEventListener("reload",bgColor)
 newBtnOver.addEventListener("mouseover",bgColor)
 newBtnClick.addEventListener('keydown', (e) => {
-if (e.code === "Enter") {
-      bgColor();
+
+    if (e.code === "Enter") {
+        bgColor();
     }
 });
 window.onload = ()=> bgColor();
 // window.addEventListener('load', bgColor());
+
+newColorInput.onchange = ()=>{
+    let newColor = newColorInput.value
+    newBg.style.backgroundColor = newColor
+}
