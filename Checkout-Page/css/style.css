@@ -87,12 +87,14 @@ main .product-list .no-product {
   padding: 1rem;
   color: var(--orange-dark);
   font-size: 20px;
+
 }
 main .product {
   display: flex;
   gap: 1rem;
   padding: 1rem;
   border-bottom: 2px solid var(--gray-light);
+  
 }
 
 main .product img {
@@ -108,6 +110,7 @@ main .product-info {
   justify-content: center;
   width: 100%;
   gap: 1rem;
+  
 }
 
 main .product-info h2 {
@@ -135,12 +138,14 @@ main .buttons-div {
   justify-content: space-between;
   align-items: center;
   font-size: 18px;
+  
 }
 
 main .buttons-div .plus-minus {
   border: 1px solid var(--gray-light);
   border-radius: 50px;
   display: inline-block;
+  
 }
 
 main .buttons-div i {
@@ -159,12 +164,14 @@ main .price-table {
   text-align: center;
   min-width: 250px;
   max-height: 250px;
+  
 }
 main .price-table .total-prices {
   display: flex;
   align-items: center;
   flex-direction: column;
   gap: 1rem;
+  
 }
 
 main .price-table .total-prices .finish-btn {
@@ -174,6 +181,7 @@ main .price-table .total-prices .finish-btn {
   padding: 0.5rem 1rem;
   color: white;
   cursor: pointer;
+  
 }
 
 main .total-info {
@@ -182,12 +190,14 @@ main .total-info {
 
 main .price-table h4 {
   color: var(--orange-dark);
+  
 }
 
 main .total-info .text-div {
   display: flex;
   justify-content: space-between;
   color: var(--fume);
+  
 }
 
 /*! ------ RESPONSIVE ------- */
