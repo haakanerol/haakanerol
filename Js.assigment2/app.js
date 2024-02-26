@@ -28,3 +28,8 @@ newColorInput.addEventListener("input",()=>{
     let newColor = newColorInput.value
     newBg.style.backgroundColor = newColor
 })
+
+document.querySelector("#copy").addEventListener("click",()=>{
+    let colorCode = newColorInput.value
+    navigator.clipboard.writeText("colorCode").then(()=>alert(`Renk ${colorCode} kopyalandi`))})
+    
