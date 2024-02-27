@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+main {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-right: 5px solid lightgrey;
+}
+
+header,
+.gif {
+  text-align: center;
+  width: 100%;
+}
+
+header img,
+.gif img {
+  width: 80%;
+}
+.scores h2,
+p {
+  font-size: 2rem;
+  font-family: sans-serif;
+  text-align: center;
+  padding: 1rem;
+}
+.scores {
+ 
+  width: 80%;
+}
+.to-win {
+  text-align: center;
+}
+.btns {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+ 
+}
+.btn {
+  flex: 1;
+  padding: 1rem;
+  border: none;
+}
+.player1 {
+  background-color: lightgreen;
+}
+.player2 {
+  background-color: #b5dce2;
+  margin: 0 0.2rem;
+}
+.reset {
+  background-color: #f5c1cb;
+}

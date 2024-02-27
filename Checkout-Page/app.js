@@ -3,7 +3,9 @@ const deleteAll = document.querySelector(".delete-div .fa-trash-can")
 const products = document.querySelector(".products")
 
 
-
+const FREE_SHIPPING_LIMIT = 2000
+const SHIPPING_PRICE = 25.99
+const TAX_RATE = 0.18
 
 // event handlers
 
@@ -20,8 +22,12 @@ products.addEventListener("click",(e)=>{
         calcPrice(e.target)
 
     }else if (e.target.classList.contains("fa-minus")){
+        if(e.target.nextElementSibling.textContent>1){
+        e.target.nextElementSibling.textContent--}
+        calcPrice(e.target)
 
     }else if (e.target.classList.contains("fa-trash-can")){
+        e.target.closest(".product").remove()
        
     }
 
@@ -30,7 +36,21 @@ products.addEventListener("click",(e)=>{
 
 const calcPrice = (btn)=>{
     const discountPrice = btn.closest(".product-info")
-                             .querySelector("#discounted-price")
-         console.log(discountPrice.textContent);                    
+                             .querySelector("#discounted-price");
+    const productPrice = btn.closest(".button-div") 
+                            .querySelector("#product-price");  
+    const quantity = btn.parentNode.querySelector("#quantity")                   
+         console.log(discountPrice.textContent);  
+         
+         
+
+
+    calcTotalPrice()
+}
+
+
+const calcTotalPrice = ()=>{
+    const prices = document.querySelectorAll("#product-price")
+    const total = [...prices].reduce((sum, price) => sum+Number(price.textContent),0)
 
 }
