@@ -39,6 +39,7 @@ const calcPrice = (btn)=>{
                              .querySelector("#discounted-price");
     const productPrice = btn.closest(".button-div") 
                             .querySelector("#product-price");  
+                           
     const quantity = btn.parentNode.querySelector("#quantity")                   
          console.log(discountPrice.textContent);  
          
