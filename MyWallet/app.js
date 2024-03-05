@@ -21,9 +21,15 @@ let totalExpenses = 0;
 let totalRest = 0;
 let expensesList = [];
 
-
+btnAdd.disabled = true;
 // Event Handlers
+inputIncome.addEventListener('input', ()=>{
+    if (inputIncome.value.trim() !== '') {
+        btnAdd.disabled = false;
+    } 
+});
 btnAdd.addEventListener('click', ()=>{
+    
     totalIncome += Number(inputIncome.value);
     inputIncome.value = '';
     localStorage.setItem('totalIncome', totalIncome);
@@ -123,6 +129,9 @@ const setExpensesDom = ({date, type, amount, id})=>{
         incomeTd.textContent = totalIncome;
         expensesTd.textContent = spendings;
         restTd.textContent = totalIncome - spendings;
+        if(restTd.textContent < 0){
+            restTd.classList.add('text-danger');
+        }
 
     };
 
